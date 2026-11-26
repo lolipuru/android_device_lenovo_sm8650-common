@@ -195,7 +195,6 @@ repeater-qti-pmic-eusb2.ko
 repeater-i2c-eusb2_ptn3222.ko
 redriver.ko
 ps5169.ko
-nvt_36xxx.ko
 pm8941-pwrkey.ko
 haptic.ko
 i2c-msm-geni.ko
