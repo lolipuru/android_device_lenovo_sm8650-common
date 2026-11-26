@@ -314,19 +314,6 @@ on property:persist.lenovo.camera.autoframing.switcher=*
     setprop persist.odm.camera.autoframing.enable ${persist.lenovo.camera.autoframing.switcher}
 #camera property end
 
-#add for online lenovocust
-on post-fs-data
-    chown system system /lenovocust
-    chmod 0777 /lenovocust
-
-on early-init
-    mkdir /lenovocust 0777 system system
-
-on fs
-    wait /dev/block/bootdevice/by-name/lenovocust
-    mount ext4 /dev/block/bootdevice/by-name/lenovocust /lenovocust nosuid nodev barrier=1
-    restorecon_recursive   /lenovocust
-
 #pen dda
 on property:sys.boot_completed=1
     chmod 0444 /dev/lenovo_penraw
