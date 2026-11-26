@@ -103,6 +103,10 @@ TARGET_KERNEL_CONFIG := \
     vendor/lenovo/sm8650_GKI.config \
     vendor/$(PRODUCT_DEVICE)_GKI.config
 
+ifneq ($(TARGET_OPT_IN_OSS_DTBO),true)
+TARGET_KERNEL_SKIP_DTBS := true
+endif
+
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/lenovo/sm8650-modules
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
