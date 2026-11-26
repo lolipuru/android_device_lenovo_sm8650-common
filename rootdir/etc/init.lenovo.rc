@@ -1,3 +1,6 @@
 on boot
     chown system system /proc/gesture_control
     chmod 0660 /proc/gesture_control
+
+on property:sys.boot_completed=1
+    chmod 0444 /dev/lenovo_penraw
