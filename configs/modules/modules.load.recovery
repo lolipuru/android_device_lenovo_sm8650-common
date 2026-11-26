@@ -153,7 +153,6 @@ sys_pm_vx.ko
 msm_performance.ko
 sysmon_subsystem_stats.ko
 cdsprm.ko
-wcd_usbss_i2c.ko
 fsa4480-i2c.ko
 fsa4480-sub-i2c.ko
 adsp_sleepmon.ko
