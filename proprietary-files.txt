@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Lenovo Legion Y700 3rd gen (TB321FU_ROW_OPEN_USER_Q00002.0_W_ZUI_17.5.10.031_ST_251125). 
+## are from Lenovo Legion Y700 3rd gen (TB321FU_ROW_OPEN_USER_Q00002.0_W_ZUI_17.5.10.319_ST_260811). 
 
 # ACDB
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -253,7 +253,15 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Connection Security
 vendor/bin/ssgqmigd
 vendor/bin/ssgqmigd64
+vendor/bin/ssgtzd
+vendor/etc/init/ssgtzd.rc
 vendor/etc/ssg/tz_whitelist.json
+vendor/lib64/libconfigdb.so
+vendor/lib64/libdsi_netctrl.so
+vendor/lib64/libnicm_dsi.so
+vendor/lib64/libnicm_utils.so
+vendor/lib64/libnicm.so
+vendor/lib64/libxml.so
 
 # Diag
 system_ext/lib64/vendor.qti.diaghal@1.0.so
@@ -544,6 +552,9 @@ vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libdsd2pcm.so
+
+# PD mapper
+vendor/bin/pd-mapper
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
