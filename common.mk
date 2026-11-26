@@ -206,6 +206,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
 # Power
+$(call soong_config_set,qtipower,tap_to_wake_node,/proc/gesture_control)
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
@@ -219,6 +221,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.lenovo.rc \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \

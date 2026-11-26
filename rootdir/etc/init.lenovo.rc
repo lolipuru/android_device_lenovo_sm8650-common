@@ -1,0 +1,3 @@
+on boot
+    chown system system /proc/gesture_control
+    chmod 0660 /proc/gesture_control
